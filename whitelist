@@ -1,0 +1,7 @@
+local allowedPlayers = { "Player1", "Player2", "Player3" } -- Replace with allowed names
+
+game.Players.PlayerAdded:Connect(function(player)
+    if not table.find(allowedPlayers, player.Name) then
+        player:Kick("You are not whitelisted on this server.")
+    end
+end)
