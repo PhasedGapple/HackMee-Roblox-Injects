@@ -1,4 +1,4 @@
-local allowedPlayers = { "Player1", "Player2", "Player3" } -- Replace with allowed names
+local allowedPlayers = { "Alland20201_dev", "Player2", "Player3" } -- Replace with allowed names
 
 game.Players.PlayerAdded:Connect(function(player)
     if not table.find(allowedPlayers, player.Name) then
